@@ -6,7 +6,14 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+        <div align="center"><p>
+	<a href="{{ path('smsapi') }}">SEND SMS</a>
+	<a href="{{ path('getadmincontracy') }}">GET ADMIN CONTRACT</a>
+    <a href="{{ path('getAdminStats') }}">GET ADMIN STATS</a>
+    <a href="{{ path('getAdminPurchased') }}">GET ADMIB PURCHASEDS</a>
+
+</p></div>{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
 </html>
